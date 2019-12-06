@@ -10,6 +10,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/Style.css"/>
+  <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
       
 </head>
 <body>
@@ -75,9 +81,9 @@
  
  
     <div class="row">
-        <div class="col-lg-4 courdb cours1"> <button  type="button" id="unc" class="btn buttbd">View more</button></div>
-        <div class="col-lg-4 courdb cours2"> <button  type="button" id="deuxc" class="btn buttbd">View more</button></div>
-        <div class="col-lg-4 courdb cours3"> <button  type="button" id="troisc" class="btn buttbd">View more</button></div>
+        <div class="col-lg-4 courdb cours1"> <button  type="button" id="unc" class="btn buttbd"><a href="#ex1" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4 courdb cours2"> <button  type="button" id="deuxc" class="btn buttbd"><a href="#ex2" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4 courdb cours3"> <button  type="button" id="troisc" class="btn buttbd"><a href="#ex3" rel="modal:open">View more</a></button></div>
       </div>
   
 
@@ -89,9 +95,21 @@
     </div>
     <div class="text-center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/MkLog_27S6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-   
+    </div>  
  </div>
+
+ <div id="ex1"  class="modal">
+    <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+  <a href="#" rel="modal:close">Close</a>
+  </div>
+  <div id="ex2"  class="modal">
+    <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+  <a href="#" rel="modal:close">Close</a>
+  </div>
+  <div id="ex3" class="modal">
+    <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+  <a href="#" rel="modal:close">Close</a>
+  </div>
 
 </body>
 <script src="./js/main.js"></script>

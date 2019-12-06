@@ -56,7 +56,7 @@ $(document).ready(function(){
         $("#quatrec").toggle();
     });  
     $(".cours5").mouseenter(function(){
-        $("cinqc").toggle();
+        $("#cinqc").toggle();
     }); 
     $(".cours6").mouseenter(function(){
         $("#sixc").toggle();

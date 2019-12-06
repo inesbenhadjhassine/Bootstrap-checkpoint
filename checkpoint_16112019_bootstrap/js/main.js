@@ -70,10 +70,3 @@ $(document).ready(function(){
     $(".cours9").mouseenter(function(){
         $("#neufc").toggle();
     });
-
-    $(".buttbd").click(function(){
-        $(this).hide ("slow", function() { alert("This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal")});
-    });
-     
-
-
